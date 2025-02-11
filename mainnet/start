@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run --rm -it -v .:/app/storage bosagora/dms-input:v0.x.x-c48148 -v.chain-bridge.env,.loyalty-bridge.env -k BRIDGE_VALIDATOR_KEY= -t 검증자키
+docker run --rm -it -v .:/app/storage bosagora/dms-input:v0.x.x-c48148 --values .chain-bridge.env,.loyalty-bridge.env --key BRIDGE_VALIDATOR_KEY= --title 검증자키
 docker compose up -d
 sleep 10
-docker run --rm -it -v .:/app/storage bosagora/dms-input:v0.x.x-c48148 -v .chain-bridge.env,.loyalty-bridge.env -k BRIDGE_VALIDATOR_KEY= -c true
+docker run --rm -it -v .:/app/storage bosagora/dms-input:v0.x.x-c48148 --values .chain-bridge.env,.loyalty-bridge.env --key BRIDGE_VALIDATOR_KEY= --clear true
