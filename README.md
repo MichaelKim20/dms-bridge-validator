@@ -10,8 +10,8 @@ https://docs.docker.com/engine/install/
 
 ## Bridge Client 설치
 ```shell
-git clone https://github.com/acc-coin/acc-bridge-validator.git
-cd acc-bridge-validator
+git clone https://github.com/kios-coin/kios-bridge-validator.git
+cd kios-bridge-validator
 ```
 ---
 

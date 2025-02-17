@@ -21,7 +21,7 @@ services:
       - bridge_db_volume:/postgresql/data
 
   acc-chain-bridge:
-    image: bosagora/acc-bridge-validator:v2.x.x-e5aaf9
+    image: bosagora/kios-bridge-validator:v2.x.x-e5aaf9
     container_name: acc-chain-bridge
     restart: always
     volumes:
@@ -32,7 +32,7 @@ services:
       - bridge-db
 
   acc-loyalty-bridge:
-    image: bosagora/acc-bridge-validator:v2.x.x-e5aaf9
+    image: bosagora/kios-bridge-validator:v2.x.x-e5aaf9
     container_name: acc-loyalty-bridge
     restart: always
     volumes:
